@@ -1,0 +1,17 @@
+meta {
+  name: 댓글 수정
+  type: http
+  seq: 1
+}
+
+patch {
+  url: {{URL}}/posts/{{post_id}}/replies/{{reply_id}}
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "content": "ㄹㅇ - 수정"
+  }
+}

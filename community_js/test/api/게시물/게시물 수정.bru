@@ -1,0 +1,18 @@
+meta {
+  name: 게시물 수정
+  type: http
+  seq: 1
+}
+
+patch {
+  url: {{URL}}/posts/69
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "title": "Morgan 가입인사 - 수정",
+    "content": "가입인사 드립니다! - 수정"
+  }
+}
